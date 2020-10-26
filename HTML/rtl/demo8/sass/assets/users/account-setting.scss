@@ -1,0 +1,460 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../base/base';    // Base Variables
+
+.section {
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.layout-spacing {
+    padding-bottom: 25px;
+}
+.form-control {
+  padding: 8px 8px;
+}
+
+.blockui-growl-message {
+  display: none;
+  text-align: right;
+  padding: 15px;
+  background-color: $success;
+  color: $white;
+  border-radius: 3px;
+
+  i {
+    font-size: 20px;
+  }
+}
+
+.general-info .info h6, .about .info h5, .work-platforms .info h5, .contact .info h5, .social .info h5, .skill .info h5, .edu-experience .info h5, .work-experience .info h5 {
+  color: $m-color_4;
+  margin: 4px 8px 40px 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/*
+    General Infomation
+*/
+
+.general-info {
+  background-color: $m-color_10;
+  border-radius: 6px;
+
+  .info, .save-info {
+    padding: 20px;
+  }
+
+  .info {
+    .form {
+      width: 92%;
+    }
+
+    .upload {
+      border-left: 1px solid $m-color_18;
+
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        color: $m-color_14;
+      }
+    }
+
+    label {
+      color: $m-color_6;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .dropify-wrapper {
+      width: 120px;
+      height: 120px;
+      border: none;
+      border-radius: 6px;
+      background: transparent;
+
+      .dropify-preview {
+        background-color: $m-color_10;
+        padding: 0;
+      }
+
+      .dropify-clear {
+        font-size: 16px;
+        padding: 4px 8px;
+        color: $white;
+        border: none;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-infos-message {
+        padding-top: 27px;
+
+        &::before {
+          height: 20px;
+          position: absolute;
+          top: -1px;
+          right: 45%;
+          color: $white;
+          -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+          background: transparent;
+          width: 0;
+          height: 0;
+          font-size: 28px;
+          width: 24px;
+          content: " ";
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-upload-cloud'%3e%3cpolyline points='16 16 12 12 8 16'%3e%3c/polyline%3e%3cline x1='12' y1='12' x2='12' y2='21'%3e%3c/line%3e%3cpath d='M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3'%3e%3c/path%3e%3cpolyline points='16 16 12 12 8 16'%3e%3c/polyline%3e%3c/svg%3e");
+          height: 20px;
+        }
+      }
+
+      &.touch-fallback {
+        border: 1px solid $m-color_2;
+
+        .dropify-preview .dropify-infos .dropify-infos-inner {
+          padding: 0;
+        }
+
+        .dropify-clear {
+          color: $m-color_9;
+        }
+
+        .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+/*
+    Image upload
+*/
+
+/*
+    About
+*/
+
+.about {
+  background-color: $m-color_10;
+  border-radius: 6px;
+
+  .info, .save-info {
+    padding: 20px;
+  }
+
+  .info label {
+    color: $m-color_6;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+/*
+    Education and Experience
+*/
+
+.work-platforms {
+  background-color: $m-color_10;
+  border-radius: 6px;
+
+  .info {
+    padding: 20px;
+  }
+
+  .platform-div {
+    &:not(:last-child) {
+      margin-bottom: 55px;
+      padding-bottom: 55px;
+      border-bottom: 2px solid $m-color_3;
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+/*
+    Contact
+*/
+
+.contact {
+  background-color: $m-color_10;
+  border-radius: 6px;
+
+  .info, .save-info {
+    padding: 20px;
+  }
+
+  .info label {
+    color: $m-color_6;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+/*
+    Social
+*/
+
+.social {
+  background-color: $m-color_10;
+  border-radius: 6px;
+
+  .info, .save-info {
+    padding: 20px;
+  }
+
+  .input-group-prepend .input-group-text {
+    border-radius: 6px;
+    color: $white;
+    border: none;
+  }
+}
+
+.input-group {
+  .input-group-prepend .input-group-text svg, &:hover .input-group-prepend .input-group-text svg {
+    color: $m-color_14;
+  }
+}
+
+.social .info input {
+  border-radius: 0.25rem !important;
+}
+
+/*
+    Skills
+*/
+
+.skill {
+  background-color: $m-color_10;
+  border-radius: 6px;
+
+  .input-form {
+    margin-bottom: 24px;
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  input[type="text"] {
+    margin-left: 10px;
+  }
+
+  #add-skills {}
+
+  .info {
+    padding: 20px;
+  }
+
+  .skill-name {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: $m-color_6;
+  }
+
+  .save-info {
+    padding: 20px;
+  }
+
+  .info label {
+    text-transform: uppercase;
+    color: $l-primary;
+  }
+
+  .custom-progress {
+    &.progress-up .range-count {
+      margin-top: 11px;
+    }
+
+    &.progress-down .range-count {
+      margin-top: 15px;
+    }
+  }
+
+  .range-count {
+    font-weight: 700;
+    color: $dark;
+
+    .range-count-number {
+      display: inline-block;
+      background: $m-color_12;
+      padding: 3px 8px;
+      border-radius: 5px;
+      color: $m-color_14;
+      border: 1px solid $m-color_12;
+    }
+
+    .range-count-unit {
+      color: $m-color_14;
+    }
+  }
+
+  .custom-progress {
+    &.top-right .range-count, &.bottom-right .range-count {
+      text-align: left;
+    }
+  }
+
+  .progress-range-counter {
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      background: $m-color_14;
+      cursor: pointer;
+      height: 16px;
+      width: 16px;
+      margin-top: -4px;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+    }
+
+    &:active::-webkit-slider-thumb {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+
+    &:focus::-webkit-slider-thumb {
+      background: $m-color_14;
+      cursor: pointer;
+      height: 16px;
+      width: 16px;
+      margin-top: -4px;
+      box-shadow: none;
+    }
+
+    &::-moz-range-thumb {
+      background: $m-color_14;
+      cursor: pointer;
+      height: 16px;
+      width: 16px;
+      margin-top: -4px;
+    }
+  }
+}
+
+input[type=range] {
+  &::-webkit-slider-runnable-track, &::-moz-range-track, &::-ms-track {
+    background: $m-color_18;
+  }
+}
+
+/*
+    Education and Experience
+*/
+
+.edu-experience {
+  background-color: $m-color_10;
+  border-radius: 6px;
+
+  .edu-section {
+    &:not(:last-child) {
+      margin-bottom: 55px;
+      padding-bottom: 55px;
+      border-bottom: 2px solid $m-color_3;
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  .info, .save-info {
+    padding: 20px;
+  }
+
+  .info label {
+    color: $m-color_6;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+/*
+    Work Experience
+*/
+
+.work-experience {
+  background-color: $m-color_10;
+  border-radius: 6px;
+
+  .work-section {
+    &:not(:last-child) {
+      margin-bottom: 55px;
+      padding-bottom: 55px;
+      border-bottom: 2px solid $m-color_3;
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  .info, .save-info {
+    padding: 20px;
+  }
+
+  .info label {
+    color: $m-color_6;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+/*
+    Footer
+*/
+
+.account-settings-footer {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 266px);
+  background: $m-color_18;
+  padding: 12px 20px;
+  -webkit-box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid $m-color_18;
+  border-radius: 6px 6px 0 0;
+  z-index: 5;
+
+  .as-footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.sidebar-closed .account-settings-footer {
+    width: calc(100% - 32px);
+}
+
+@media (max-width: 991px) {
+  .account-settings-container .account-content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .account-settings-footer {
+    width: calc(100% - 29px);
+  }
+}
+
+@media (max-width: 767px) {
+  .general-info .info .upload {
+    border-left: none;
+  }
+
+  .skill .input-form {
+    width: 100%;
+  }
+}

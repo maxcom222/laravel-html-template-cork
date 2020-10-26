@@ -1,0 +1,22 @@
+{
+  "name": "cork-admin-template",
+  "version": "1.8.0",
+  "description": "Bootstrap Admin Template",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS",
+    "Bootstrap"
+  ],
+  "author": "Design Reset",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

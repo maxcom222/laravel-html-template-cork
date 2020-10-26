@@ -1,0 +1,66 @@
+/*  
+    ======================
+        Color Pallet
+    ======================
+*/
+
+#colorPallet {
+    position: fixed;
+    top: 96px;
+    right: -114px;
+    width: 150px;
+    z-index: 1030;
+    display: flex;
+    background: rgb(236, 230, 246);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    /*padding: 13px;*/
+    border-right: none;
+    transition: .3s ease all;
+}
+#colorPallet.show {
+    right: 0;
+}
+#colorPallet .pallet-icon {
+    display: inline-block;
+    align-self: center;
+    padding: 8px;
+    /*background: #d3d3d3;*/
+    /*color: #191e3a;*/
+    background: #1b2e4b;
+    color: #fff;
+    cursor: pointer;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right: 1px solid rgba(92, 26, 195, 0.14);
+}
+#colorPallet .pallet-icon svg {
+    width: 19px;
+    height: 19px;
+}
+
+#colorPallet .p-colors {
+    /*height: 25px;*/
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    padding: 6px;
+    /*display: flex;*/
+}
+#colorPallet .p-colors [class*="color-scheme-"] {
+    height: 25px;
+    width: 25px;
+    background: #000;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+#colorPallet .p-colors [class*="color-scheme-"]:not(:last-child) { margin-right: 18px; }
+#colorPallet .p-colors .color-scheme-default {
+    background: #5c1ac3;
+}
+#colorPallet .p-colors .color-scheme-minimal {
+    background: #f1f2f3;
+    border: 1px solid #bfc9d4;
+}

@@ -1,0 +1,66 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../base/base';    // Base Variables
+
+.noUi-target {
+  background: $m-color_18;
+  border-radius: 4px;
+  border: 1px solid $m-color_18;
+  box-shadow: none;
+}
+
+.noUi-horizontal {
+  height: 8px;
+
+  .noUi-handle {
+    width: 25px;
+    height: 20px;
+    top: -8px;
+    border: 1px solid $m-color_7;
+    background: $m-color_7;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.noUi-handle {
+  &:after, &:before {
+    display: none;
+  }
+}
+
+.noUi-connect {
+  background: $m-color_14;
+}
+
+.noUi-tooltip {
+  border: 1px solid $m-color_18;
+  border-radius: 8px;
+  background: $m-color_18;
+  color: $m-color_14;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.noUi-horizontal .noUi-tooltip {
+  bottom: 148%;
+}
+
+.example-val {
+  font-weight: 700;
+  font-size: 14px;
+  color: $m-color_14;
+
+  span.precentage-val {
+    display: inline-block;
+    background: $m-color_18;
+    border-radius: 5px;
+    color: $m-color_14;
+    border: 1px solid $m-color_18;
+    padding: 4px 6px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,45 @@
+/*
+    Infobox 1
+*/
+
+.infobox-1 {
+  border: 1px solid $m-color_18;
+  width: 50%;
+  padding: 25px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 11px 0px rgba(6, 8, 24, 0.39);
+  box-shadow: 0px 2px 11px 0px rgba(6, 8, 24, 0.39);
+  margin-right: auto;
+  margin-left: auto;
+
+  .info-icon svg {
+    width: 50px;
+    height: 50px;
+    stroke-width: 1px;
+    margin-bottom: 20px;
+    color: $primary;
+  }
+
+  .info-heading {
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+  }
+
+  .info-text {
+    font-size: 15px;
+    color: $m-color_6;
+    margin-bottom: 15px;
+  }
+
+  .info-link {
+    color: $primary;
+    font-weight: 600;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

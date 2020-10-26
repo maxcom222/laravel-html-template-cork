@@ -1,0 +1,65 @@
+/*
+    ==================
+        Total Sales
+    ==================
+*/
+
+.widget-two {
+  position: relative;
+  background: $m-color_10;
+  padding: 0;
+  border-radius: 8px;
+  height: 100%;
+
+  .widget-content {
+    font-size: 17px;
+  }
+
+  .w-chart {
+    position: absolute;
+    bottom: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .w-numeric-value {
+    display: flex;
+    color: $white;
+    font-weight: 500;
+    padding: 20px;
+    justify-content: space-between;
+
+    .w-icon {
+      display: inline-block;
+      background: $warning;
+      padding: 13px 12px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-self: center;
+      height: 45px;
+      width: 45px;
+    }
+
+    svg {
+      display: block;
+      color: $m-color_10;
+      width: 20px;
+      height: 20px;
+    }
+
+    .w-value {
+      font-size: 19px;
+      display: block;
+      color: $m-color_3;
+      font-weight: 700;
+      margin-bottom: -9px;
+    }
+
+    .w-numeric-title {
+      font-size: 13px;
+      color: $m-color_6;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+/*  
+    ======================
+        MEDIA QUERIES
+    ======================
+*/
+
+@media (max-width: 991px) {
+  .header-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /*
+      =============
+          NavBar
+      =============
+  */
+
+  .main-container.sidebar-closed #content, #content {
+    margin-right: 0;
+  }
+
+  /*
+      =============
+          Sidebar
+      =============
+  */
+
+  #sidebar .theme-brand {
+    border-radius: 0;
+    background-color: $m-color_12;
+    padding: 7px 24px 7px 12px;
+    border-color: $m-color_12;
+  }
+
+  .sidebar-closed #sidebar .theme-brand {
+    padding: 0.9px 24px 0.9px 12px;
+  }
+
+  .main-container:not(.sbar-open) .sidebar-wrapper, body.alt-menu .sidebar-closed > .sidebar-wrapper {
+    width: 0;
+    right: -52px;
+  }
+
+  .main-container {
+    padding: 0;
+  }
+
+  #sidebar ul.menu-categories.ps {
+    height: calc(100vh - 114px) !important;
+  }
+
+  .sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    border-radius: 0;
+  }
+
+  .sidebar-noneoverflow {
+    overflow: hidden;
+  }
+
+  #sidebar {
+    height: 100vh !important;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  /* display .overlay when it has the .active class */
+
+  .overlay.show {
+    display: block;
+    opacity: .7;
+  }
+
+  .navbar .navbar-item .nav-item {
+    &.message-dropdown .dropdown-menu {
+      &:after {
+        left: 107px;
+      }
+
+      left: -104px;
+      padding: 24px 0;
+    }
+
+    &.user-profile-dropdown .dropdown-menu {
+      left: -16px;
+
+      &::after {
+        left: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  header.navbar {
+    margin: 0 233px 0 0;
+  }
+
+  .sidebar-noneoverflow .header-container {
+    padding-right: 80px;
+  }
+
+  .sidebar-closed #sidebar .theme-brand li.theme-text a {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar .navbar-item .nav-item {
+    &.message-dropdown .dropdown-menu {
+      min-width: 16.2rem;
+    }
+
+    &.dropdown.notification-dropdown .dropdown-menu {
+      left: -60px;
+      min-width: 16rem;
+      padding: 24px 12px;
+
+      &:after {
+        left: 64px;
+      }
+    }
+  }
+}

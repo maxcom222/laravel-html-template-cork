@@ -1,0 +1,158 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../base/base';    // Base Variables
+
+.table-controls {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    margin: 0 2px;
+    line-height: 1;
+
+    > a {
+      display: inline-block;
+
+      i {
+        margin: 0;
+        color: #555;
+        font-size: 16px;
+        display: block;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.table .progress {
+  margin-bottom: 0;
+}
+
+/*Table Colors*/
+
+.contextual-table.table > {
+  thead > tr > th, tbody > tr > td {
+    border: none;
+  }
+}
+
+.table-default {
+  > {
+    td, th {
+      background-color: rgba(136, 142, 168, 0.1) !important;
+      color: $m-color_4 !important;
+    }
+  }
+
+  background-color: rgba(136, 142, 168, 0.1) !important;
+  color: $m-color_4 !important;
+}
+
+.table-primary {
+  > {
+    td, th {
+      background-color: rgba(27, 85, 226, 0.18) !important;
+      color: $m-color_4 !important;
+    }
+  }
+
+  background-color: rgba(27, 85, 226, 0.18) !important;
+  color: $m-color_4 !important;
+}
+
+.table-secondary {
+  > {
+    td, th {
+      background-color: rgba(92, 26, 195, 0.11) !important;
+      color: $m-color_4 !important;
+    }
+  }
+
+  background-color: rgba(92, 26, 195, 0.11) !important;
+  color: $m-color_4 !important;
+}
+
+.table-success {
+  > {
+    td, th {
+      background-color: rgba(141, 191, 66, 0.11) !important;
+      color: $m-color_4 !important;
+    }
+  }
+
+  background-color: rgba(141, 191, 66, 0.11) !important;
+  color: $m-color_4 !important;
+}
+
+.table-danger {
+  > {
+    td, th {
+      background-color: rgba(231, 81, 90, 0.11) !important;
+      color: $m-color_4 !important;
+    }
+  }
+
+  background-color: rgba(231, 81, 90, 0.11) !important;
+  color: $m-color_4 !important;
+}
+
+.table-warning {
+  > {
+    td, th {
+      background-color: rgba(226, 160, 63, 0.11) !important;
+      color: $m-color_4 !important;
+    }
+  }
+
+  background-color: rgba(226, 160, 63, 0.11) !important;
+  color: $m-color_4 !important;
+}
+
+.table-info {
+  > {
+    td, th {
+      background-color: rgba(33, 150, 243, 0.11) !important;
+      color: $m-color_4 !important;
+    }
+  }
+
+  background-color: rgba(33, 150, 243, 0.11) !important;
+  color: $m-color_4 !important;
+}
+
+.table-light {
+  > {
+    td, th {
+      background-color: transparent;
+      color: #ffffff !important;
+    }
+  }
+
+  background-color: transparent;
+  color: #ffffff !important;
+}
+
+.table-dark {
+  > {
+    td, th {
+      background-color: rgba(59, 63, 92, 0.56) !important;
+      background-color: rgba(14, 23, 38, 0.2392156863) !important;
+      background-color: rgba(27, 46, 75, 0.11) !important;
+      color: $m-color_4 !important;
+      border-color: #fff !important;
+    }
+  }
+
+  background-color: rgba(59, 63, 92, 0.56) !important;
+  background-color: rgba(14, 23, 38, 0.2392156863) !important;
+  background-color: rgba(27, 46, 75, 0.11) !important;
+  color: $m-color_4 !important;
+  border-color: #fff !important;
+}

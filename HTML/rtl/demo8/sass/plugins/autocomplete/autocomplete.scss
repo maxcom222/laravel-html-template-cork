@@ -1,0 +1,66 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../base/base';    // Base Variables
+
+.custom-autocomplete {
+  height: 328px;
+}
+
+.autocomplete-suggestions {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid $m-color_12;
+  background: $m-color_12;
+  cursor: default;
+  overflow: auto;
+  z-index: 888 !important;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  max-height: 228px !important;
+}
+
+.autocomplete-suggestion {
+  padding: 5px 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: $m-color_6;
+  letter-spacing: 1px;
+}
+
+.autocomplete-no-suggestion {
+  padding: 5px 19px;
+}
+
+.autocomplete-selected {
+  background: $m-color_18;
+}
+
+.autocomplete-suggestions strong {
+  font-weight: bold;
+  color: $m-color_14;
+}
+
+.autocomplete-group {
+  padding: 12px 19px;
+  font-weight: bold;
+  font-size: 16px;
+  color: $m-color_4;
+  display: block;
+  border-bottom: 1px solid $m-color_18;
+  margin-bottom: 19px;
+  border-top: 1px solid $m-color_18;
+
+  &:not(:first-child) {
+    margin-top: 19px;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom-autocomplete {
+    height: 450px;
+  }
+}

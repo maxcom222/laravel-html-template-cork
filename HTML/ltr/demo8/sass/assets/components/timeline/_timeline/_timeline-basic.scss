@@ -1,0 +1,151 @@
+/*
+=====================
+    Basic
+=====================
+*/
+
+.timeline-line .item-timeline {
+  display: flex;
+
+  .t-dot {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      border-color: inherit;
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-color: $info;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      border-color: inherit;
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-color: $info;
+      width: 0;
+      height: auto;
+      top: 25px;
+      bottom: -15px;
+      border-right-width: 0;
+      border-top-width: 0;
+      border-bottom-width: 0;
+      border-radius: 0;
+    }
+
+    &.t-dot-primary:before {
+      border-color: $primary;
+    }
+
+    &.t-dot-success:before {
+      border-color: $success;
+    }
+
+    &.t-dot-warning:before {
+      border-color: $warning;
+    }
+
+    &.t-dot-info:before {
+      border-color: $info;
+    }
+
+    &.t-dot-danger:before {
+      border-color: $danger;
+    }
+
+    &.t-dot-dark:before {
+      border-color: $dark;
+    }
+
+    &.t-dot-primary:after {
+      border-color: $primary;
+    }
+
+    &.t-dot-success:after {
+      border-color: $success;
+    }
+
+    &.t-dot-warning:after {
+      border-color: $warning;
+    }
+
+    &.t-dot-info:after {
+      border-color: $info;
+    }
+
+    &.t-dot-danger:after {
+      border-color: $danger;
+    }
+
+    &.t-dot-dark:after {
+      border-color: $dark;
+    }
+  }
+
+  &:last-child .t-dot:after {
+    display: none;
+  }
+
+  .t-meta-time {
+    margin: 0;
+    min-width: 100px;
+    max-width: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $m-color_6;
+    align-self: center;
+  }
+
+  .t-text {
+    padding: 10px;
+    align-self: center;
+    margin-left: 10px;
+
+    p {
+      font-size: 13px;
+      margin: 0;
+      color: $m-color_6;
+      font-weight: 600;
+
+      a {
+        color: $m-color_14;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .t-time {
+    margin: 0;
+    min-width: 58px;
+    max-width: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $m-color_6;
+    padding: 10px 0;
+  }
+
+  .t-text .t-meta-time {
+    margin: 0;
+    min-width: 100px;
+    max-width: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $m-color_7;
+    align-self: center;
+  }
+}

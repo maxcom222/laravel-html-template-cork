@@ -1,0 +1,137 @@
+/*
+	===============================
+			@Import	Function
+	===============================
+*/
+/*
+	===============================
+			@Import	Mixins
+	===============================
+*/
+body {
+  background-color: #060818; }
+
+.h5, h5 {
+  font-size: 1.25rem; }
+
+.h4, h4 {
+  font-size: 1.5rem; }
+
+.h6, h6 {
+  font-size: 1rem; }
+
+.navbar-brand-privacy img {
+  width: 62px;
+  height: 62px; }
+
+/*
+    ======================
+        Header Wrapper
+    ======================
+*/
+#headerWrapper {
+  padding: 30px 50px; }
+  #headerWrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    pointer-events: none;
+    height: 280px;
+    background-color: #3b3f5c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23506690' cx='50' cy='0' r='50'/%3E%3Cg fill='%234c6189' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23495c83' cx='50' cy='100' r='50'/%3E%3Cg fill='%2345577c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23425275' cx='50' cy='200' r='50'/%3E%3Cg fill='%233e4d6f' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%233b4869' cx='50' cy='300' r='50'/%3E%3Cg fill='%23374462' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23333f5c' cx='50' cy='400' r='50'/%3E%3Cg fill='%23303a56' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%232c3650' cx='50' cy='500' r='50'/%3E%3Cg fill='%2329314a' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23252d44' cx='50' cy='600' r='50'/%3E%3Cg fill='%2322293e' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%231e2438' cx='50' cy='700' r='50'/%3E%3Cg fill='%231b2032' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23171c2d' cx='50' cy='800' r='50'/%3E%3Cg fill='%23141827' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23111422' cx='50' cy='900' r='50'/%3E%3Cg fill='%230c0f1d' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23060818' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain; }
+  #headerWrapper .main-heading {
+    color: #bfc9d4;
+    margin: 0; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #headerWrapper:before {
+    background-image: none; } }
+
+/*
+    ======================
+        Privacy Wrapper
+    ======================
+*/
+#privacyWrapper {
+  padding: 80px 0; }
+  #privacyWrapper .privacy-container {
+    max-width: 815px;
+    margin: 0 auto; }
+    #privacyWrapper .privacy-container p {
+      color: #888ea8; }
+  #privacyWrapper .privacyContent {
+    padding: 30px 30px;
+    background: #0e1726;
+    margin-top: -60px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2); }
+    #privacyWrapper .privacyContent .privacy-head {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #1b2e4b; }
+    #privacyWrapper .privacyContent .privacyHeader h1 {
+      font-weight: 600; }
+    #privacyWrapper .privacyContent .privacyHeader p {
+      margin-bottom: 0;
+      font-size: 16px; }
+    #privacyWrapper .privacyContent .get-privacy-terms svg {
+      margin-left: 12px; }
+  #privacyWrapper .privacy-content-container section:not(:last-child) {
+    margin-bottom: 45px; }
+  #privacyWrapper .privacy-content-container h5 {
+    margin-bottom: 24px; }
+  #privacyWrapper h5 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 1px; }
+    #privacyWrapper h5.policy-info-ques {
+      color: #bfc9d4;
+      font-weight: 600; }
+
+/*
+    ==========================
+        Mini Footer Wrapper
+    ==========================
+*/
+#miniFooterWrapper {
+  color: #fff;
+  font-size: 14px;
+  border-top: solid 1px #0e1726;
+  padding: 14px;
+  -webkit-box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -6px 10px 0 rgba(0, 0, 0, 0.14), 0 -1px 18px 0 rgba(0, 0, 0, 0.12), 0 -3px 5px -1px rgba(0, 0, 0, 0.2); }
+  #miniFooterWrapper p {
+    color: #888ea8; }
+  #miniFooterWrapper .arrow {
+    background-color: #0e1726;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: -33px;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    cursor: pointer; }
+    #miniFooterWrapper .arrow p {
+      align-self: center;
+      margin-bottom: 0;
+      color: #009688;
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 1px; }
+  #miniFooterWrapper .copyright a {
+    color: #009688;
+    font-weight: 700;
+    text-decoration: none; }

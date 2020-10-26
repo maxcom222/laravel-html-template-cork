@@ -1,0 +1,127 @@
+/*
+    ====================
+        Visitors by Browser
+    ====================
+*/
+
+.widget-four {
+  position: relative;
+  background: $m-color_10;
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+
+  .widget-heading {
+    margin-bottom: 54px;
+
+    h5 {
+      font-size: 17px;
+      display: block;
+      color: $m-color_3;
+      margin-bottom: 0;
+    }
+  }
+
+  .widget-content {
+    font-size: 17px;
+
+    .browser-list {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .w-icon {
+      display: inline-block;
+      padding: 9px 8px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-self: center;
+      height: 34px;
+      width: 34px;
+      margin-right: 12px;
+
+      svg {
+        display: block;
+        width: 17px;
+        height: 17px;
+      }
+    }
+
+    .browser-list {
+      &:nth-child(1) .w-icon {
+        background: $primary;
+      }
+
+      &:nth-child(2) .w-icon {
+        background: $danger;
+      }
+
+      &:nth-child(3) .w-icon {
+        background: $warning;
+      }
+
+      &:nth-child(1) .w-icon svg {
+        color: $l-primary;
+      }
+
+      &:nth-child(2) .w-icon svg {
+        color: $l-danger;
+      }
+
+      &:nth-child(3) .w-icon svg {
+        color: $l-warning;
+      }
+    }
+
+    .w-browser-details {
+      width: 100%;
+      align-self: center;
+    }
+
+    .w-browser-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1px;
+
+      h6 {
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $m-color_6;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $m-color_6;
+      }
+    }
+
+    .w-browser-stats .progress {
+      margin-bottom: 0;
+      height: 22px;
+      padding: 4px;
+      border-radius: 20px;
+      box-shadow: none;
+
+      .progress-bar {
+        position: relative;
+
+        &:before {
+          content: '';
+          height: 7px;
+          width: 7px;
+          background: $m-color_10;
+          position: absolute;
+          right: 3px;
+          border-radius: 50%;
+          top: 3.49px;
+        }
+      }
+    }
+  }
+}

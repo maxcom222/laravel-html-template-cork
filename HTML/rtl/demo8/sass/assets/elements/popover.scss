@@ -1,0 +1,234 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../base/base';    // Base Variables
+
+.popovers-section h6 {
+  color: #3b3f5c;
+  font-size: 0.875rem;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.popover {
+  border: 1px solid #060818;
+  border-radius: 4px;
+  right: auto !important;
+
+  .popover-header {
+    border-radius: 0;
+    background-color: #060818;
+    color: #bfc9d4;
+  }
+
+  .popover-body {
+    background-color: #060818;
+    color: #bfc9d4;
+  }
+}
+
+/*
+    Popovers
+*/
+
+.popover-primary, .popover-success, .popover-info, .popover-danger, .popover-warning, .popover-secondary, .popover-dark {
+  border-color: #060818;
+}
+
+/*      popover Arrow   */
+
+.bs-popover-auto[x-placement^=right], .bs-popover-right {
+  margin-right: 0;
+  margin-left: .5rem;
+}
+
+.bs-popover-auto[x-placement^=right] > .arrow, .bs-popover-right > .arrow {
+  left: calc(-.5rem);
+  right: auto;
+}
+
+.bs-popover-auto[x-placement^=right] > .arrow::after {
+  left: 1px;
+  border-width: .5rem .5rem .5rem 0;
+  border-left-color: #fff;
+}
+
+.bs-popover-right {
+  > .arrow::after {
+    left: 1px;
+    border-width: .5rem .5rem .5rem 0;
+    border-left-color: #fff;
+  }
+
+  &.popover .arrow {
+    &:after, &:before {
+      border-right-color: #060818;
+    }
+  }
+}
+
+.bs-popover-auto[x-placement^=left], .bs-popover-left {
+  margin-left: 0;
+  margin-right: .5rem;
+}
+
+.bs-popover-auto[x-placement^=left] > .arrow, .bs-popover-left > .arrow {
+  right: calc(-.5rem);
+  left: auto;
+}
+
+.bs-popover-auto[x-placement^=left] > .arrow::after {
+  left: 1px;
+  border-width: .5rem 0 .5rem .5rem;
+  border-left-color: #fff;
+}
+
+.bs-popover-left {
+  > .arrow::after {
+    left: 1px;
+    border-width: .5rem 0 .5rem .5rem;
+    border-left-color: #fff;
+  }
+
+  &.popover .arrow {
+    &:after, &:before {
+      border-left-color: #060818;
+    }
+  }
+}
+
+.bs-popover-top.popover .arrow {
+  &:after, &:before {
+    border-top-color: #060818;
+  }
+}
+
+.bs-popover-bottom.popover .arrow {
+  &:after, &:before {
+    border-bottom-color: #060818;
+  }
+}
+
+.popover-primary .arrow {
+  &:after, &:before {
+    border-top-color: #060818;
+  }
+}
+
+.popover-success .arrow {
+  &:after, &:before {
+    border-top-color: #060818;
+  }
+}
+
+.popover-info .arrow {
+  &:after, &:before {
+    border-top-color: #060818;
+  }
+}
+
+.popover-danger .arrow {
+  &:after, &:before {
+    border-top-color: #060818;
+  }
+}
+
+.popover-warning .arrow {
+  &:after, &:before {
+    border-top-color: #060818;
+  }
+}
+
+.popover-secondary .arrow {
+  &:after, &:before {
+    border-top-color: #060818;
+  }
+}
+
+.popover-dark .arrow {
+  &:after, &:before {
+    border-top-color: #060818;
+  }
+}
+
+/*      popover Header      */
+
+.popover-primary .popover-header {
+  background-color: #060818;
+  border: none;
+  color: #1b55e2;
+}
+
+.popover-success .popover-header {
+  background-color: #060818;
+  border: none;
+  color: #8dbf42;
+}
+
+.popover-info .popover-header {
+  background-color: #060818;
+  border: none;
+  color: #2196f3;
+}
+
+.popover-danger .popover-header {
+  background-color: #060818;
+  border: none;
+  color: #e7515a;
+}
+
+.popover-warning .popover-header {
+  background-color: #060818;
+  border: none;
+  color: #e2a03f;
+}
+
+.popover-secondary .popover-header {
+  background-color: #060818;
+  border: none;
+  color: #5c1ac3;
+}
+
+.popover-dark .popover-header {
+  background-color: #060818;
+  border: none;
+  color: #3b3f5c;
+}
+
+/*      Popover Body    */
+
+.popover-primary .popover-body {
+  background-color: #060818;
+  color: #1b55e2;
+}
+
+.popover-success .popover-body {
+  background-color: #060818;
+  color: #8dbf42;
+}
+
+.popover-info .popover-body {
+  background-color: #060818;
+  color: #2196f3;
+}
+
+.popover-danger .popover-body {
+  background-color: #060818;
+  color: #e7515a;
+}
+
+.popover-warning .popover-body {
+  background-color: #060818;
+  color: #e2a03f;
+}
+
+.popover-secondary .popover-body {
+  background-color: #060818;
+  color: #5c1ac3;
+}
+
+.popover-dark .popover-body {
+  background-color: #060818;
+  color: #3b3f5c;
+}

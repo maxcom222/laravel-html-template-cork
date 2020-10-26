@@ -1,0 +1,30 @@
+/*
+  Component Card 7
+*/
+
+.component-card_7 {
+  background-color: rgba(27, 85, 226, 0.3803921569);
+  color: $white;
+  border: none;
+  width: 18rem;
+  margin: 0 auto;
+
+  .card-body {
+    padding: 23px 10px;
+    text-align: center;
+  }
+
+  .card-text, .rating-count {
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  .rating-stars svg {
+    width: 18px;
+    color: $warning;
+
+    &.fill {
+      fill: $warning;
+    }
+  }
+}

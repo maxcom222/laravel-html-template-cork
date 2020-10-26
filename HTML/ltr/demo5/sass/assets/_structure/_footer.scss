@@ -1,0 +1,42 @@
+/*  
+    ======================
+        Footer-wrapper
+    ======================
+*/
+
+.footer-wrapper {
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  background: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  width: 100%;
+  border-top-left-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container.sidebar-closed .footer-wrapper {
+  border-radius: 0;
+}
+
+.footer-wrapper .footer-section {
+  p {
+    margin-bottom: 0;
+    color: #515365;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    a {
+      color: #515365;
+    }
+  }
+
+  svg {
+    color: #e7515a;
+    fill: rgba(231, 81, 90, 0.4196078431);
+    width: 15px;
+    height: 15px;
+    vertical-align: text-top;
+  }
+}

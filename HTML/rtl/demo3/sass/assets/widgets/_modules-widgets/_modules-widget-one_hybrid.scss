@@ -1,0 +1,62 @@
+/*
+    ==================
+        Statistics
+    ==================
+*/
+
+.widget-one_hybrid {
+  background: $m-color_10;
+
+  .widget-heading {
+    padding: 20px 13px;
+
+    .w-icon {
+      display: inline-block;
+      padding: 7px 8px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    svg {
+      height: 18px;
+      width: 18px;
+    }
+
+    .w-value {
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 0;
+      color: $m-color_3;
+    }
+
+    h5 {
+      margin-bottom: 0;
+      font-size: 15px;
+      color: $m-color_6;
+    }
+  }
+
+  &.widget-followers .widget-heading .w-icon {
+    color: $white;
+    border: 1px solid $primary;
+    background-color: $primary;
+  }
+
+  &.widget-referral .widget-heading .w-icon {
+    color: $white;
+    border: 1px solid $danger;
+    background-color: $danger;
+  }
+
+  &.widget-social .widget-heading .w-icon {
+    color: $white;
+    border: 1px solid $info;
+    background-color: $info;
+  }
+
+  &.widget-engagement .widget-heading .w-icon {
+    color: $white;
+    border: 1px solid $m-color_14;
+    background-color: $m-color_14;
+  }
+}

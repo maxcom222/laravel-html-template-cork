@@ -1,0 +1,112 @@
+/*
+    ====================
+        Order Summary
+    ====================
+*/
+
+.widget-three {
+  position: relative;
+  background: $m-color_10;
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+
+  .widget-heading {
+    margin-bottom: 54px;
+
+    h5 {
+      font-size: 19px;
+      display: block;
+      color: $m-color_3;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+  }
+
+  .widget-content {
+    font-size: 17px;
+
+    .summary-list {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .w-icon {
+      display: inline-block;
+      padding: 8px 8px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-self: center;
+      height: 34px;
+      width: 34px;
+      margin-right: 12px;
+
+      svg {
+        display: block;
+        width: 17px;
+        height: 17px;
+      }
+    }
+
+    .summary-list {
+      &:nth-child(1) .w-icon {
+        background: $secondary;
+      }
+
+      &:nth-child(2) .w-icon {
+        background: $m-color_14;
+      }
+
+      &:nth-child(3) .w-icon {
+        background: $warning;
+      }
+
+      &:nth-child(1) .w-icon svg {
+        color: $l-secondary;
+      }
+
+      &:nth-child(2) .w-icon svg {
+        color: $l-success;
+      }
+
+      &:nth-child(3) .w-icon svg {
+        color: $l-warning;
+      }
+    }
+
+    .w-summary-details {
+      width: 100%;
+      align-self: center;
+    }
+
+    .w-summary-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1px;
+
+      h6 {
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $m-color_6;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $m-color_6;
+      }
+    }
+
+    .w-summary-stats .progress {
+      margin-bottom: 0;
+      height: 6px;
+      border-radius: 20px;
+      box-shadow: none;
+    }
+  }
+}

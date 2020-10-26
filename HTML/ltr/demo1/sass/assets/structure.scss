@@ -1,0 +1,236 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../base/base';    // Base Variables
+
+html {
+  min-height: 100%;
+}
+
+body {
+  color: $m-color_6;
+  height: 100%;
+  font-size: 0.875rem;
+  background: $body-color;
+  overflow-x: hidden;
+  overflow-y: auto;
+  letter-spacing: 0.0312rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $m-color_3;
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: $primary;
+  background: transparent;
+}
+
+::selection {
+  color: $primary;
+  background: transparent;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.625rem;
+  color: $m-color_3;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid $m-color_18;
+}
+
+strong {
+  font-weight: 600;
+}
+
+code {
+  color: $danger;
+}
+
+/*Page title*/
+
+.page-header {
+  border: 0;
+  margin: 0;
+
+  &:before {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+}
+
+.page-title {
+  float: left;
+  margin-bottom: 16px;
+  margin-top: 30px;
+
+  h3 {
+    margin: 0;
+    font-size: 20px;
+    color: $m-color_3;
+    font-weight: 600;
+  }
+
+  span {
+    display: block;
+    font-size: 11px;
+    color: $m-color_8;
+    font-weight: normal;
+  }
+}
+
+.main-container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 10px 0 0 10px;
+}
+
+#container.fixed-header {
+  margin-top: 56px;
+}
+
+#content {
+  width: 50%;
+  flex-grow: 8;
+  margin-top: 59px;
+  margin-bottom: 0;
+  margin-left: 255px;
+}
+
+.main-container-fluid > .main-content > .container {
+  float: left;
+  width: 100%;
+}
+
+#content > .wrapper {
+  -webkit-transition: margin ease-in-out .1s;
+  -moz-transition: margin ease-in-out .1s;
+  -o-transition: margin ease-in-out .1s;
+  transition: margin ease-in-out .1s;
+  position: relative;
+}
+
+.widget {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.layout-top-spacing {
+  margin-top: 25px;
+}
+
+.layout-spacing {
+  padding-bottom: 40px;
+}
+
+.layout-px-spacing {
+  padding: 0 16px !important;
+}
+
+.widget.box .widget-header {
+  background: $m-color_10;
+  padding: 0px 8px 0px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.row [class*="col-"] .widget .widget-header h4 {
+  color: $m-color_4;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+  padding: 16px 15px;
+}
+
+.seperator-header {
+  background: transparent;
+  box-shadow: none;
+  margin-bottom: 40px;
+  border-radius: 0;
+
+  h4 {
+    color: $m-color_6;
+    margin-bottom: 0;
+    display: inline-block;
+    border: 2px dashed $m-color_6;
+    line-height: 1.4;
+    padding: 3px 6px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    letter-spacing: 1px;
+  }
+}
+
+.widget .widget-header {
+  border-bottom: 0px solid $m-color_1;
+
+  &:before {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+}
+
+.widget-content-area {
+  padding: 20px;
+  position: relative;
+  background-color: $m-color_10;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.content-area {
+  max-width: 58.333333%;
+  margin-left: 80px;
+}
+
+
+//  ===============================
+//       _structure Imports 
+//  ===============================
+
+@import '_structure/_navbar';
+@import '_structure/_sidebar';
+@import '_structure/_media-query';

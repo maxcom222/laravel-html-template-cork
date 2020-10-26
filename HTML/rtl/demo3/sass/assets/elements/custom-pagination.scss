@@ -1,0 +1,414 @@
+//  =================
+//      Imports
+//  =================
+
+@import '../../base/base';    // Base Variables
+
+/*
+    ============================
+        Pagination container
+    =============================
+*/
+
+.paginating-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+
+  .prev svg, .next svg {
+    width: 18px;
+    height: 18px;
+    vertical-align: text-bottom;
+  }
+
+  .pagination {
+    margin-bottom: 0;
+  }
+
+  li {
+    a {
+      padding: 10px 15px;
+      font-weight: 600;
+      color: $m-color_6;
+    }
+
+    padding: 10px 0;
+    font-weight: 600;
+    color: $m-color_6;
+    border-radius: 4px;
+
+    &:not(:last-child) {
+      margin-left: 4px;
+    }
+  }
+}
+
+/*
+    Default Style
+*/
+
+.pagination-default {
+  li {
+    border: 2px solid $m-color_18;
+
+    &:hover {
+      border: 2px solid $m-color_14 !important;
+
+      a {
+        color: $m-color_14;
+      }
+    }
+
+    &.active {
+      border: 2px solid $m-color_14 !important;
+      color: $m-color_14;
+    }
+
+    a.active:hover, &.active a {
+      color: $m-color_14;
+    }
+  }
+
+  .prev {
+    border: 2px solid $m-color_18;
+
+    &:hover {
+      border: 2px solid $m-color_14;
+
+      a, svg {
+        color: $m-color_14;
+      }
+    }
+  }
+
+  .next {
+    border: 2px solid $m-color_18;
+
+    &:hover {
+      border: 2px solid $m-color_14;
+
+      a, svg {
+        color: $m-color_14;
+      }
+    }
+  }
+}
+
+/* 
+    Solid Style
+*/
+
+.pagination-solid {
+  li {
+    background-color: $m-color_18;
+
+    &:hover a {
+      color: $m-color_14;
+    }
+
+    &.active {
+      background-color: $m-color_14 !important;
+      color: $white;
+    }
+
+    a.active:hover, &.active a {
+      color: $white;
+    }
+  }
+
+  .prev {
+    background-color: $m-color_18;
+
+    &:hover {
+      background-color: $m-color_14;
+
+      a, svg {
+        color: $white;
+      }
+    }
+  }
+
+  .next {
+    background-color: $m-color_18;
+
+    &:hover {
+      background-color: $m-color_14;
+
+      a, svg {
+        color: $white;
+      }
+    }
+  }
+}
+
+/*    
+    ===================
+        No Spacing
+    ===================
+*/
+
+.pagination-no_spacing {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+
+  .prev {
+    background-color: $m-color_18;
+    border-radius: 50%;
+    padding: 10px 11px;
+    margin-right: 5px;
+
+    &:hover {
+      background-color: $m-color_14;
+
+      svg {
+        color: $white;
+      }
+    }
+  }
+
+  .next {
+    background-color: $m-color_18;
+    border-radius: 50%;
+    padding: 10px 11px;
+    margin-left: 5px;
+
+    &:hover {
+      background-color: $m-color_14;
+
+      svg {
+        color: $white;
+      }
+    }
+  }
+
+  .prev svg, .next svg {
+    width: 18px;
+    height: 18px;
+    vertical-align: text-bottom;
+  }
+
+  .pagination {
+    margin-bottom: 0;
+  }
+
+  li {
+    &:first-child {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    &:last-child {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+
+    background-color: $m-color_18;
+
+    a {
+      padding: 10px 15px;
+      font-weight: 600;
+      color: $m-color_6;
+
+      &.active {
+        background-color: $m-color_14 !important;
+        border-radius: 6px;
+        color: $white;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &:hover {
+        color: $m-color_14;
+      }
+    }
+
+    padding: 10px 0;
+    font-weight: 600;
+    color: $m-color_6;
+  }
+}
+
+/*
+    =======================
+        Custom Pagination
+    =======================
+*/
+
+/*
+    Custom Solid
+*/
+
+.pagination-custom_solid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+
+  .prev {
+    background-color: $m-color_18;
+    border-radius: 50%;
+    padding: 10px 11px;
+    margin-left: 25px;
+
+    &:hover {
+      background-color: $m-color_14;
+
+      svg {
+        color: $white;
+      }
+    }
+  }
+
+  .next {
+    background-color: $m-color_18;
+    border-radius: 50%;
+    padding: 10px 11px;
+    margin-right: 25px;
+
+    &:hover {
+      background-color: $m-color_14;
+
+      svg {
+        color: $white;
+      }
+    }
+  }
+
+  .prev svg, .next svg {
+    width: 18px;
+    height: 18px;
+    vertical-align: text-bottom;
+  }
+
+  .pagination {
+    margin-bottom: 0;
+  }
+
+  li {
+    &:first-child {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    &:last-child {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+
+    background-color: $m-color_18;
+
+    a {
+      padding: 10px 15px;
+      font-weight: 600;
+      color: $m-color_6;
+
+      &.active {
+        background-color: $m-color_14 !important;
+        border-radius: 6px;
+        color: $white;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &:hover {
+        color: $m-color_14;
+      }
+    }
+
+    padding: 10px 0;
+    font-weight: 600;
+    color: $m-color_6;
+  }
+}
+
+/*
+    Custom Outline
+*/
+
+.pagination-custom_outline {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+
+  .prev {
+    border: 2px solid $m-color_18;
+    border-radius: 50%;
+    padding: 8px 11px;
+    margin-left: 25px;
+
+    &:hover {
+      border: 2px solid $m-color_14;
+
+      svg {
+        color: $m-color_14;
+      }
+    }
+  }
+
+  .next {
+    border: 2px solid $m-color_18;
+    border-radius: 50%;
+    padding: 8px 11px;
+    margin-right: 25px;
+
+    &:hover {
+      border: 2px solid $m-color_14;
+
+      svg {
+        color: $m-color_14;
+      }
+    }
+  }
+
+  .prev svg, .next svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+  }
+
+  .pagination {
+    margin-bottom: 0;
+  }
+
+  li {
+    padding: 10px 0;
+    font-weight: 600;
+    color: $m-color_6;
+    border: 1px solid $m-color_18;
+
+    &.active {
+      background-color: $m-color_18;
+    }
+
+    &:first-child {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    &:last-child {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+
+    a {
+      padding: 10px 15px;
+      font-weight: 600;
+      color: $m-color_6;
+
+      &:hover {
+        color: $m-color_14;
+      }
+    }
+
+    &.active a {
+      background-color: $m-color_18;
+      border: 2px solid $m-color_14 !important;
+      border-radius: 6px;
+      color: $m-color_14;
+    }
+  }
+}
